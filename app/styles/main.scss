@@ -1,17 +1,25 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
+$fa-font-path: "/bower_components/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome";
+@import 'compass';
 
-$TextBlue: #005290;
+
+$TextBlue: #207db6;
 $LightBlue: #a6bbd2;
-
-
+$LightLightBlue: #e6eefa;
+$font: 'PT Sans', sans-serif;
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
+}
+h1, h2, h3{
+  font-family: $font;
+  font-weight: bold;
 }
 body {
   /* Margin bottom by footer height */
@@ -58,9 +66,11 @@ body > .container {
     background-position: bottom;
     border-bottom:solid 1px #999999;
     background-color:#f3f3f3;
+    font-family: $font;
 }
 .secondary-nav-bar {
   background-color:#e6eefa;
+  font-family: $font;
   h1{
     font-size:22px;
     color:#275da6;
@@ -76,6 +86,7 @@ body > .container {
     background-color:#222222;
     color:#cccccc;
     font-size:12px;
+    font-family: $font;
     a.homelink { 
         padding:12px;
         font-size:12px;
@@ -104,7 +115,7 @@ body > .container {
     color:#cccccc;
     font-size:12px;
     font-size:16px;
-    
+    font-family: $font;
     .navbar-main { 
         .navbar-nav > li > a{
             color:#333365;
@@ -135,18 +146,154 @@ body > .container {
   background-repeat:none;
   background-image: url('/images/main-banner-bg.jpg');
   .cta-row{
+    line-height: normal;
     margin-top:35px;
     text-align:center;
+    font-family: $font;
+    .btn-grey { 
+     margin-top:10px;
+     margin-bottom:0px;
+
+    }
+    .btn-wrapper{
+      background-color:#e7eff9;
+      height:115px;
+      position:absolute;
+      bottom:0;
+      width:100%;
+      .btn-grey{
+        width: 198px;
+      }
+    }
     .cta-right, .cta-left{
       margin-top:65px;
+      position:relative;
       height:330px;
       background-color:#f5f8fd;
       @include box-shadow(#154067 0px 0px 15px);
+      .cta-body{
+        font-size:18px;
+        line-height: auto;
+        padding:20px;
+        .highlight{
+          margin-left: auto;
+          margin-right:auto;
+          .number{ 
+            font-size:60px;
+            color:#009fdc;
+          }
+          .text{ 
+            bottom:0;
+            right:100px;
+            font-size: 13px;
+            color: #898989;
+            text-align: left;
+            margin-top: 24px;
+            margin-left:5px;
+          }
+        }
+      }
+    }
+    .cta-right h2{
+      background-color:#0078a2;
+      color:#fff;
+      margin:0;
+      padding:10px;
+    }
+    .cta-left h2{
+      background-color:#47c5b5;
+      color:#fff;
+      margin:0;
+      padding:10px;
     }
     .cta-center{
       height:405px;
       background-color:#f5f8fd;
+      border:solid 8px #0299c5;
+      position: relative;
       @include box-shadow(#154067 0px 0px 15px);
+      h2{
+        background-color:#0299c5;
+        padding:5px;
+        color:#fff;
+        margin:0;
+        font-size:12px;
+      }
+      h3{
+        background-color:#f1632a;
+        padding:10px;
+        color:#fff;
+        margin:0;
+        font-size:30px;
+      }
+      
+      .cta-body{
+
+        font-size:18px;
+        line-height: auto;
+        padding:20px;
+        .highlight{
+          margin-left: auto;
+          margin-right:auto;
+          .number{ 
+            font-size: 66px;
+            color: #009fdc;
+            margin-top: 10px;
+          }
+          .text{ 
+            bottom:0;
+            right:100px;
+            font-size:15px;
+            color:#898989;
+            text-align: left;
+            margin-top:37px;
+            margin-left:10px;
+          }
+        }
+
+      }
+    }
+  }
+}
+.btn-grey { 
+  width: 250px;
+}
+.btn-color { 
+  width: 250px;
+
+  &.btn-buy-now{ 
+    margin-bottom:5px;
+    // needs latest Compass, add '@import "compass"' to your scss
+    background-color: #8fc547; // Old browsers
+    @include filter-gradient(#8fc547, #74a534, vertical); // IE6-8
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #8fc547 0%,#74a534 100%));
+    color:#fff;
+    &:hover{
+      // needs latest Compass, add '@import "compass"' to your scss
+      background-color: #74a534; // Old browsers
+      @include filter-gradient(#74a534, #74a534, vertical); // IE6-8
+      // IE9 SVG, needs conditional override of 'filter' to 'none'
+      $experimental-support-for-svg: true;
+      @include background-image(linear-gradient(top,  #74a534 0%,#74a534 100%));
+    }
+  }
+  &.btn-free-trial{ 
+    // needs latest Compass, add '@import "compass"' to your scss
+    background-color: #f1632a; // Old browsers
+    @include filter-gradient(#f1632a, #cc4915, vertical); // IE6-8
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #f1632a 0%,#cc4915 100%));
+    color:#fff;
+    &:hover{
+      // needs latest Compass, add '@import "compass"' to your scss
+      background-color: #cc4915; // Old browsers
+      @include filter-gradient(#cc4915, #cc4915, vertical); // IE6-8
+      // IE9 SVG, needs conditional override of 'filter' to 'none'
+      $experimental-support-for-svg: true;
+      @include background-image(linear-gradient(top,  #cc4915 0%,#cc4915 100%));
     }
   }
 }
@@ -173,16 +320,31 @@ body > .container {
     color:#252525;
   }
   ul{
+    margin:0;
+    padding:0;
+    margin-top:0px;
+    margin-bottom:30px;
     li{
-      font-size:18px;
+      list-style: none;
+      font-size:22px;
+      font-family: $font;
       color:#0065a7;
+      .fa{
+        color:#90c555;
+        margin-right:10px;
+      }
       a{
         color:#0065a7;
       }
     }
   }
 }
-
+.btn-buy-now{
+  font-size:18px;
+}
+.btn-free-trial{
+  font-size:14px;
+}
 .cta{
   background-color:#fff;
   padding:25px;
@@ -201,7 +363,9 @@ body > .container {
   }
 }
 
-
+.content-well{
+  margin:20px;
+}
 .secondary-nav-bar{
     background-color:#f3f3f3;
     color:#cccccc;
@@ -219,4 +383,314 @@ body > .container {
             }
         }
     }
+}
+.compare-table{
+  border-bottom: solid 1px $LightBlue;
+  font-family: $font;
+  font-size:18px;
+  width: 100%;  
+  tr{
+    th{
+      border-top: none !important;
+      text-align: center;
+      padding:15px;
+      font-size:22px;
+      font-weight: bold;
+      &.professional{
+        color:#f1632a;
+        font-size:25px;
+      }
+      &.standard{
+        color:#0078a2;
+      }
+      &.free{
+        color:#47c5b5;
+      }
+    }
+  }
+  tr{
+    td{
+      border-color:$LightBlue;
+      border-top: solid 1px $LightBlue !important;
+      border-left: solid 1px $LightBlue;
+      text-align: center;
+      padding:15px;
+      .footnote{
+        font-size:12px;
+      }
+    }
+    td.note{
+      text-align: left;
+      background-color: $LightLightBlue;
+      font-size:22px;
+      font-weight: bold;
+      font-family: $font;
+      color:$TextBlue;
+    }
+    td.free{
+      border-right: solid 1px $LightBlue;
+    }
+  }
+}
+.content-well-bottom{
+  .compare-table{
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0; 
+    border-bottom:none !important;
+    .btn-grey { 
+      width: 200px;
+    }
+    td.professional{
+      width:25%;
+      text-align: center;
+    }
+    td.note{
+      width:55%;
+    }
+    td.free, td.standard{
+      width:10%;
+    }
+    tr.header-single{
+      td.note{
+        font-size:22px;
+          color:#000;
+          font-weight: normal;
+
+        
+      }
+      td.standard{
+        border-top: solid 1px $LightBlue !important;
+      }
+      td.free{
+        border-top: solid 1px $LightBlue !important;
+        border-right: solid 1px $LightBlue !important;
+      }
+      td{
+        border-bottom: none !important;
+        border-top: none !important;
+        padding-top:0;
+        padding-bottom:0;
+      }
+    }
+    font-family: $font;
+    font-size:18px;
+    width: 100%;  
+    tr{
+      th{
+        border-top: none !important;
+        text-align: center;
+        padding:15px;
+        font-size:22px;
+        font-weight: bold;
+        &.professional{
+          color:#f1632a;
+          font-size:25px;
+        }
+        &.standard{
+          color:#0078a2;
+        }
+        &.free{
+          color:#47c5b5;
+        }
+        &.th-active{
+          padding:0;
+        }
+        .active{
+          padding:15px;
+          margin-left: -2px;
+          margin-right: -2px;
+          border-radius: 6px  6px 0 0;
+          border-right: solid 4px $TextBlue;
+          border-left: solid 4px $TextBlue;
+          border-top: solid 4px $TextBlue !important;
+          background-color: #fff;
+          height:100%;
+        }
+      }
+    }
+    tr{
+      td{
+        border-color:$LightBlue;
+        border-left: solid 1px $LightBlue;
+        border-top: none !important;
+        border-bottom: solid 1px $LightBlue;
+        text-align: center;
+        background-color:#f1f7fd;
+        padding:15px;
+        .footnote{
+          font-size:12px;
+        }
+        .fa{
+          color:#90c555;
+          margin-right:10px;
+        }
+      }
+      td.note{  
+        text-align: left;
+        background-color: transparent;
+        font-size:18px;
+        font-weight: normal;
+        font-family: $font;
+        color:#333;
+        border-left: none !important;
+        &.header{
+          padding-top:70px;
+          font-size:22px;
+          color:#000;
+          font-weight: normal;
+        }
+      }
+      td.free{
+       border-right: solid 1px $LightBlue!important;
+      }
+      td.active{
+        border-right: solid 4px $TextBlue;
+        border-left: solid 4px $TextBlue;
+        background-color: #fff;
+      }
+      &.header{
+        td{
+          font-weight: bold;
+          vertical-align: bottom;
+          &.professional{
+            color:#f1632a;
+          }
+          &.standard{
+            color:#0078a2;
+          }
+          &.free{
+            color:#47c5b5;
+          }
+        }
+      }
+    }
+  }
+}
+.button-row{
+  td{
+    vertical-align: top;
+  }
+  .note{
+    border-bottom:none !important;
+  }
+  .professional{
+    border-bottom: solid 4px $TextBlue;
+  }
+  .standard{
+    border-bottom: solid 4px $TextBlue;
+  }
+  .free{
+    border-bottom: solid 4px $TextBlue;
+  }
+  td.active{
+    border-bottom: solid 4px $TextBlue;
+    background-color: #fff;
+  }
+}
+.footer-wrapper{
+  margin-top:50px;
+  background-color: #ebebeb;
+  border-top:solid 1px #cccccc;
+  .foot{
+    color:#9999ad;
+    a{
+      color:#9999ad;
+    }
+    background-color:#e3e3e3;
+    border-top:solid 1px #cccccc;
+    .foot-links{
+      padding-top:30px;  
+    }
+    .copyright{
+      padding-bottom:30px;
+    }
+    .global-links{
+      height:40px;
+      padding-top:30px; 
+      background-image: url('/images/map-image.gif');
+
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-left: 100px;
+    }
+  }
+}
+
+.footer-menu {
+  padding-bottom:30px;
+  h3{
+    color:#666666;
+    font-size:16px;
+  }
+  .signup-btn{
+    margin-top:30px;
+    margin-bottom:10px;
+    // needs latest Compass, add '@import "compass"' to your scss
+    background-color: #f29327; // Old browsers
+    @include filter-gradient(#f29327, #f78e16, vertical); // IE6-8
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #f29327 0%,#f78e16 100%));
+    color:#fff;
+    &:hover{
+      color:#fff;
+      // needs latest Compass, add '@import "compass"' to your scss
+      background-color: #f78e16; // Old browsers
+      @include filter-gradient(#f78e16, #f78e16, vertical); // IE6-8
+      // IE9 SVG, needs conditional override of 'filter' to 'none'
+      $experimental-support-for-svg: true;
+      @include background-image(linear-gradient(top,  #f78e16 0%,#f78e16 100%));
+    }
+  }
+  ul{
+    margin:0;
+    padding:0;
+
+    li{
+      list-style: none;
+      a{
+        color:#455da6;
+        font-size:12px;
+      }
+    }
+  }
+  .social{
+    a{
+      .fa{
+        color:#5a5a5a;
+      }
+    }
+  }
+}
+
+.simple_radius   { @include border-radius(6px, 6px); }
+
+.btn-default { 
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: #006fb3; // Old browsers
+  @include filter-gradient(#006fb3, #005290, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #006fb3 0%,#005290 100%));
+  color:#fff;
+}
+
+.btn-grey { 
+
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: #c2c2c2; // Old browsers
+  @include filter-gradient(#c2c2c2, #c2c2c2, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top,  #c2c2c2 0%,#c2c2c2 100%));
+  color:#fff;
+  &:hover{
+    color:#fff;
+    // needs latest Compass, add '@import "compass"' to your scss
+    background-color: #a3a3a3; // Old browsers
+    @include filter-gradient(#a3a3a3, #a3a3a3, vertical); // IE6-8
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #a3a3a3 0%,#a3a3a3 100%));
+  }
 }

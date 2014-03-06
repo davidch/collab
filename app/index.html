@@ -9,6 +9,8 @@
         <title>collabnet</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -20,14 +22,19 @@
         <!-- endbuild -->
         <script src="bower_components/modernizr/modernizr.js"></script>
 
+        <!--[if gte IE 9]>
+          <style type="text/css">
+            .gradient {
+               filter: none;
+            }
+          </style>
+        <![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-
-
         <!-- Fixed navbar -->
 
 
@@ -143,16 +150,61 @@
                         <div class="col-md-3 col-md-offset-1">
                             <div class="cta-left">
                                 <h2>Standard</h2>
+                                <div class="cta-body">
+                                    <p>Adds access controls, support and lots more storage for your stuff</p>
+                                    <div class="highlight">
+                                        <div class="number inline-block">$2</div>
+                                        <div class="text inline-block">/user/month<br/>(packs of 5)</div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="btn-wrapper">
+                                    <a class="btn inline-block btn-default btn-block btn-grey btn-buy-now">BUY NOW</a>
+                                    <a class="btn inline-block btn-default btn-block btn-grey btn-free-trial">FREE TRIAL</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="cta-center">
-                                <h2>Standard</h2>
+                            <div class="cta-center simple_radius">
+                                <h2>Full featured / Best Value</h2>
+
+                                <h3>PROFESSIONAL</h3>
+                                <div class="cta-body">
+                                    <p>For your business: Org-wide permissions &amp;  backups, 99.9% SLA and Enterprise Support</p>
+                                    <div class="highlight">
+                                        <div class="number inline-block">$10</div>
+                                        <div class="text inline-block">/user/month<br/>unlimited users</div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="btn-wrapper">
+                                    <a class="btn inline-block btn-default btn-block btn-grey btn-color btn-buy-now">BUY NOW</a>
+                                    <a class="btn inline-block btn-default btn-block btn-grey btn-color btn-free-trial">FREE TRIAL</a>
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="cta-right">
-                                <h2>Standard</h2>
+                                <h2>Free</h2>
+                                <div class="cta-body">
+                                    <p>Yes, you own it forever, and you get everything above</p>
+
+                                    <div class="highlight">
+                                        <div class="number inline-block">$0</div>
+                                        <div class="text inline-block">/user/month<br/>unlimited users</div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="btn-wrapper">
+
+                                    <div class="btn-wrapper">
+                                        <a class="btn inline-block btn-default btn-block btn-grey btn-buy-now">SIGN UP NOW</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -164,23 +216,23 @@
             </div>
        
             <div class="container">
-                <div class="blue-cta">
+                <div class="blue-cta simple_radius">
                     <h1>A Platform for Developers</h1>
                     <div class="row">
                         <div class="col-md-6">
                              
                             <ul> 
-                                <li>Unlimited Users, Projects &amp; Repositories</li>
-                                <li>Tons of Storage for your Code and Files</li>
-                                <li>Agile Development Tools &amp; Wikis</li>
+                                <li><i class="fa fa-check fa-2x"></i> Unlimited Users, Projects &amp; Repositories</li>
+                                <li><i class="fa fa-check fa-2x"></i> Tons of Storage for your Code and Files</li>
+                                <li><i class="fa fa-check fa-2x"></i> Agile Development Tools &amp; Wikis</li>
                             </ul>
 
                         </div>
                         <div class="col-md-6">
                             <ul>
-                                <li>Subversion (SVN) &amp; Git Hosting</li>
-                                <li>One-click Deployment to PaaS &amp; Private</li>
-                                <li>Integrations with JIRA, Basecamp &amp; more</li>
+                                <li><i class="fa fa-check fa-2x"></i> Subversion (SVN) &amp; Git Hosting</li>
+                                <li><i class="fa fa-check fa-2x"></i> One-click Deployment to PaaS &amp; Private</li>
+                                <li><i class="fa fa-check fa-2x"></i> Integrations with JIRA, Basecamp &amp; more</li>
                             </ul>
 
                         </div>
@@ -189,7 +241,7 @@
 </p>
                 </div>
 
-                <div class="cta">
+                <div class="cta simple_radius">
                     
                     <div class="row">
                         <div class="col-md-9">
@@ -206,56 +258,234 @@
             </div>
 
         <div class="container">
-            <div class="pull-right">
-                <a href="#">OVERVIEW</a>
-                <a href="#">DETAILS</a>
-            </div>
-            <h3>COMPARE PLANS</h3>
-            <div class="row">
-                <table>
-                    <tr>
-                        <th>&nbsp;</th>
-                        <th class="standard">Standard</th>
-                        <th class="professional">Professional</th>
-                        <th class="free">Free</th>
-                    </tr>
-                    <tr>
-                        <td class="note">Price</td>
-                        <td class="standard">$2/user/month</td>
-                        <td class="professional">$10/user/month</td>
-                        <td class="free">It's Free!</td>
-                    </tr>
-                    <tr>
-                        <td class="note">How do I buy?</td>
-                        <td class="standard">5 User Packs</td>
-                        <td class="professional">5 User Packs</td>
-                        <td class="free">Sign up and start using!</td>
-                    </tr>
-                    <tr>
-                        <td class="note">Project Workspaces &amp; Private Repositories</td>
-                        <td class="standard">Unlimited</td>
-                        <td class="professional">Unlimited</td>
-                        <td class="free">Unlimited</td>
-                    </tr>
-                    <tr>
-                        <td class="note">Storage</td>
-                        <td class="standard">1 User = 2GB</td>
-                        <td class="professional">1 User = 5GB</td>
-                        <td class="free">2GB per Account</td>
-                    </tr>
-                    <tr>
-                        <td class="note">Environment</td>
-                        <td class="standard">Multi-Tenant</td>
-                        <td class="professional">Multi-Tenant</td>
-                        <td class="free">Multi-Tenant</td>
-                    </tr>
+            <div class="content-well">
+                <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-grey">OVERVIEW</a>
+                    <a href="#"class="btn btn-default btn-grey">DETAILS</a>
+                </div>
+                <h3>COMPARE PLANS</h3>
+                <div class="row">
+                    <table class="compare-table">
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th class="standard">Standard</th>
+                            <th class="professional">Professional</th>
+                            <th class="free">Free</th>
+                        </tr>
+                        <tr>
+                            <td class="note">Price</td>
+                            <td class="standard">$2/user/month</td>
+                            <td class="professional">$10/user/month</td>
+                            <td class="free">It's Free!</td>
+                        </tr>
+                        <tr>
+                            <td class="note">How do I buy?</td>
+                            <td class="standard">5 User Packs</td>
+                            <td class="professional">5 User Packs<div class="footnote">(5 User Plan = 10GB Account Storage)</td>
+                            <td class="free">Sign up and start using!</td>
+                        </tr>
+                        <tr>
+                            <td class="note">Project Workspaces &amp; Private Repositories</td>
+                            <td class="standard">Unlimited</td>
+                            <td class="professional">Unlimited</td>
+                            <td class="free">Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="note">Storage</td>
+                            <td class="standard">1 User = 2GB<div class="footnote">(5 User Plan = 10GB Account Storage)</div></td>
+                            <td class="professional">1 User = 5GB<div class="footnote">(5 User Plan = 10GB Account Storage)</div></td>
+                            <td class="free">2GB per Account<div class="footnote">(5 User Plan = 10GB Account Storage)</div></td>
+                        </tr>
+                        <tr>
+                            <td class="note">Environment</td>
+                            <td class="standard">Multi-Tenant</td>
+                            <td class="professional">Multi-Tenant</td>
+                            <td class="free">Multi-Tenant</td>
+                        </tr>
 
 
-                </table>
+                    </table>
 
-                </div>  
+                    </div>  
+                </div>
 
         </div>
+
+        <div class="content-well-bottom">
+
+            <div class="container">
+                <div class="content-well">
+                    <div class="row">
+                        <table class="compare-table">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th class="standard">Standard</th>
+                                <th class="professional th-active"><div class="active">Professional</div></th>
+                                <th class="free">Free</th>
+                            </tr>
+                            <tr class="header-single">
+                                <td class="note">SCM</td>
+                                <td class="standard">&nbsp;</td>
+                                <td class="professional active">&nbsp;</td>
+                                <td class="free">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="note">Subversion (SVN)</td>
+                                <td class="standard"><i class="fa fa-check fa-2x"></i></td>
+                                <td class="professional active"><i class="fa fa-check fa-2x"></i></td>
+                                <td class="free"><i class="fa fa-check fa-2x"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="note">GIT</td>
+                                <td class="standard"><i class="fa fa-check fa-2x"></i></td>
+                                <td class="professional active"><i class="fa fa-check fa-2x"></i></td>
+                                <td class="free"><i class="fa fa-check fa-2x"></i></td>
+                            </tr>
+
+
+
+                            <tr class="header">
+                                <td class="note header">SERVICES</td>
+                                <td class="standard">Standard</td>
+                                <td class="professional active">Professional</td>
+                                <td class="free">Free</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="note">Subversion (SVN)</td>
+                                <td class="standard"><i class="fa fa-check fa-2x"></i></td>
+                                <td class="professional active">2GB per Account<div class="footnote">(5 User Plan = 10GB Account Storage)</div></td>
+                                <td class="free"><i class="fa fa-check fa-2x"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="note">GIT</td>
+                                <td class="standard"><i class="fa fa-check fa-2x"></i></td>
+                                <td class="professional active"><i class="fa fa-check fa-2x"></i></td>
+                                <td class="free"><i class="fa fa-check fa-2x"></i></td>
+                            </tr>
+
+
+
+                            <tr class="header">
+                                <td class="note header">OTHER TOOLS</td>
+                                <td class="standard">Standard</td>
+                                <td class="professional active">Professional</td>
+                                <td class="free">Free</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="note">Subversion (SVN)</td>
+                                <td class="standard"><i class="fa fa-check fa-2x"></i></td>
+                                <td class="professional active">2GB per Account<div class="footnote">(5 User Plan = 10GB Account Storage)</div></td>
+                                <td class="free"><i class="fa fa-check fa-2x"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="note">GIT</td>
+                                <td class="standard"><i class="fa fa-check fa-2x"></i></td>
+                                <td class="professional active"><i class="fa fa-check fa-2x"></i></td>
+                                <td class="free"><i class="fa fa-check fa-2x"></i></td>
+                            </tr>
+
+
+                            <tr class="button-row"> 
+                                <td class="note">&nbsp;</td>
+                                <td class="standard">
+                                    <div class="btn-wrapper">
+                                        <a class="btn inline-block btn-default btn-block btn-grey btn-buy-now">BUY NOW</a>
+                                        <a class="btn inline-block btn-default btn-block btn-grey btn-free-trial">FREE TRIAL</a>
+                                    </div>
+                                </td>
+                                <td class="professional active">
+                                    <div class="btn-wrapper">
+                                        <a class="btn inline-block btn-default btn-block btn-grey btn-color btn-buy-now">BUY NOW</a><br/>
+                                        <a class="btn inline-block btn-default btn-block btn-grey btn-color btn-free-trial">FREE TRIAL</a>
+                                    </div>
+                                </td>
+                                <td class="free">
+                                    <div class="btn-wrapper">
+                                        <a class="btn inline-block btn-default btn-block btn-grey btn-buy-now">SIGN UP NOW</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+
+
+
+                        </table>
+
+                        </div>  
+                    </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-menu col-md-4">
+                        <h3>FIND</h3>
+                        <ul>
+                            <li><a href="#">Try Now</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Data Confidentiality</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu col-md-4">
+                        <h3>LEARN</h3>
+                        <ul>
+                            <li><a href="#">Platform</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Events and Webinars</a></li>
+                            <li><a href="#">Enterprise Cloud Development</a></li>
+                            <li><a href="#">Agile Training</a></li>
+                            <li><a href="#">About CloudForge</a></li>
+                            <li><a href="#">About CollabNEt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu  col-md-2">
+                        <h3>CONNECT</h3>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i> Linkedin</a></li>
+                            <li><a href="#"><i class="fa fa-youtube-square"></i> YouTube</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu col-md-2">
+                        <a class="btn btn-grey btn-orange btn-block signup-btn">Sign Up for Free</a>
+                        <a href="#"><img src="/images/logo-CollabNet.gif"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="foot-links">
+                                <a href="#">Careers</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">Copyright &amp; Trademarks</a>
+                            </div>
+                            <div class="copyright">
+                                Copyright &copy; 2014 <strong> CollabNet, Inc</strong> All rights reserved
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="global-links">
+                                <strong>GLOBAL SITES:</strong> <a href="#">China</a> | <a href="#">Korean</a> | <a href="#">Japan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>    
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
