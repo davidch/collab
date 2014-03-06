@@ -1,0 +1,222 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+$TextBlue: #005290;
+$LightBlue: #a6bbd2;
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  color:#252525;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding:0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.inline-block{
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+.main-nav-wrapper{
+    background-image: url('/images/grey-nav-bg.gif');
+    background-repeat: repeat-x;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    border-bottom:solid 1px #999999;
+    background-color:#f3f3f3;
+}
+.secondary-nav-bar {
+  background-color:#e6eefa;
+  h1{
+    font-size:22px;
+    color:#275da6;
+    font-weight:normal;
+  }
+}
+.cloudforge{
+    margin-top:5px;
+
+}
+
+.top-bar{
+    background-color:#222222;
+    color:#cccccc;
+    font-size:12px;
+    a.homelink { 
+        padding:12px;
+        font-size:12px;
+        color:#cccccc;
+    }
+    .navbar-nav > li > a{
+        color:#cccccc;
+        font-weight:bold;
+        padding:10px;
+        &:hover{
+            color:#ccc;
+        }
+        &.loginlink{
+            color:#f89728;
+            font-size:14px;
+            padding: 10px 8px;
+            &:hover{
+                color:#f89728;
+            }
+        }
+    }
+}
+
+.main-nav-bar{
+    background-color:#f3f3f3;
+    color:#cccccc;
+    font-size:12px;
+    font-size:16px;
+    
+    .navbar-main { 
+        .navbar-nav > li > a{
+            color:#333365;
+            font-weight:bold;
+            padding:20px;
+            &:hover{
+                color:#333365;
+                background-color:#c9c9c9;
+            }
+        }
+    }
+}
+
+.navbar{
+  margin-bottom:0;
+}
+.cloud-ad-wrapper{
+  position:relative;
+  .cloud-ad{
+    position: absolute;
+    top:-10px;
+    right:0;
+  }
+}
+.main-banner-bg{
+  height:910px;
+  background-position:center center;
+  background-repeat:none;
+  background-image: url('/images/main-banner-bg.jpg');
+  .cta-row{
+    margin-top:35px;
+    text-align:center;
+    .cta-right, .cta-left{
+      margin-top:65px;
+      height:330px;
+      background-color:#f5f8fd;
+      @include box-shadow(#154067 0px 0px 15px);
+    }
+    .cta-center{
+      height:405px;
+      background-color:#f5f8fd;
+      @include box-shadow(#154067 0px 0px 15px);
+    }
+  }
+}
+.main-banner-bg-repeat{
+  height:910px;
+  background-position:center center;
+  background-image: url('/images/main-banner-bg-repeat.jpg');
+}
+
+.foot-note{
+  font-size:12px;
+  margin-bottom:0;
+}
+
+.blue-cta{
+  background-color:#cfdef5;
+  padding:25px;
+  margin:30px 10px;
+  h1{
+    margin:0;
+    margin-bottom:10px;
+    font-size:25px;
+    font-wieght:bold;
+    color:#252525;
+  }
+  ul{
+    li{
+      font-size:18px;
+      color:#0065a7;
+      a{
+        color:#0065a7;
+      }
+    }
+  }
+}
+
+.cta{
+  background-color:#fff;
+  padding:25px;
+  margin:30px 10px;
+  border: solid 1px $LightBlue;
+  font-size:18px;
+  h2{
+    margin:0;
+    margin-bottom:10px;
+    color:$TextBlue;
+    font-size:22px;
+  }
+  .btn-contact-sales{
+    width:100%;
+    margin-top:30px;
+  }
+}
+
+
+.secondary-nav-bar{
+    background-color:#f3f3f3;
+    color:#cccccc;
+    font-size:12px;
+    font-size:16px;
+    
+    .navbar-main { 
+        .navbar-nav > li > a{
+            color:#275da6;
+            font-weight:normal;
+            padding:20px 10px;
+            &:hover{
+                color:#333;
+                text-decoration:underline;
+            }
+        }
+    }
+}
