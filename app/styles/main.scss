@@ -60,7 +60,7 @@ body > .container {
     *display: inline;
 }
 .main-nav-wrapper{
-    background-image: url('/images/grey-nav-bg.gif');
+    background-image: url('../images/grey-nav-bg.gif');
     background-repeat: repeat-x;
     background-repeat: repeat-x;
     background-position: bottom;
@@ -144,7 +144,7 @@ body > .container {
   height:910px;
   background-position:center center;
   background-repeat:none;
-  background-image: url('/images/main-banner-bg.jpg');
+  background-image: url('../images/main-banner-bg.jpg');
   .cta-row{
     line-height: normal;
     margin-top:35px;
@@ -300,7 +300,7 @@ body > .container {
 .main-banner-bg-repeat{
   height:910px;
   background-position:center center;
-  background-image: url('/images/main-banner-bg-repeat.jpg');
+  background-image: url('../images/main-banner-bg-repeat.jpg');
 }
 
 .foot-note{
@@ -607,7 +607,7 @@ body > .container {
     .global-links{
       height:40px;
       padding-top:30px; 
-      background-image: url('/images/map-image.gif');
+      background-image: url('../images/map-image.gif');
 
       background-repeat: no-repeat;
       background-position: center left;

@@ -11,9 +11,10 @@ module.exports = function (grunt) {
 
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
-
+    grunt.loadNpmTasks('grunt-contrib-sass');
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
+
 
     // Define the configuration for all the tasks
     grunt.initConfig({
@@ -158,7 +159,8 @@ module.exports = function (grunt) {
             },
             dist: {
                 options: {
-                    generatedImagesDir: '<%= yeoman.dist %>/images/generated'
+                    generatedImagesDir: '<%= yeoman.dist %>/images/generated',
+                    cssDir: 'dist/styles',
                 }
             },
             server: {
@@ -393,11 +395,9 @@ module.exports = function (grunt) {
         'concurrent:dist',
         'autoprefixer',
         'concat',
-        'cssmin',
         'uglify',
         'copy:dist',
         'modernizr',
-        'rev',
         'usemin'
     ]);
 
